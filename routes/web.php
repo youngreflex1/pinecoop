@@ -1,7 +1,10 @@
 <?php
 
+use App\Http\Livewire\Accounttypes;
 use App\Http\Livewire\Employeedetails;
 use App\Http\Livewire\Employees;
+use App\Http\Livewire\Loantypes;
+use App\Models\Accounttype;
 use Illuminate\Support\Facades\Route;
 
 
@@ -30,7 +33,8 @@ Route::get('/', function () {
 
 
 Route::get('employees',Employees::class)->name('employees');
-
+Route::get('loantypes',Loantypes::class)->name('loantypes');
+Route::get('accounttypes',Accounttypes::class)->name('accounttypes');
 Route::get('employee/{employee_id}',Employeedetails::class)->name('employee');
 
 Route::middleware([

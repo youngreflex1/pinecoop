@@ -158,12 +158,10 @@ class Employees extends Component
             'pwdid' => $this->pwdid,
             'ispersonwithdisability' => $this->ispersonwithdisability,
             'chapanumber' => $this->chapanumber,
-
         ]);
 
         $this->closeModal();
         $this->resetInputFields();
-
     }
 
     public function edit($employee_id){
